@@ -4,7 +4,7 @@ base_directory = os.path.dirname(os.path.realpath(__file__))
 input_file = '02.input'
 
 with open(base_directory + '/' + input_file) as file:
-    input_lines = list(map(str.strip, file.readlines()))
+    input_lines = [line.strip() for line in file.readlines()]
 
 position = [0, 0]
 aim = 0
