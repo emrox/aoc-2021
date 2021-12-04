@@ -11,8 +11,10 @@ lines = len(input_bits)
 oxygen_bits = input_bits
 co2_bits = input_bits
 
+
 def most_common_bit_in_position(bit_position, input_list):
     return str(int(len(list(filter(lambda bit: bit[bit_position] == '1', input_list))) * 2 > len(input_list)))
+
 
 for bit_position in range(bit_size):
     if len(oxygen_bits) > 1:
