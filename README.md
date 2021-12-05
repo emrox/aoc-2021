@@ -1,7 +1,7 @@
 [![flake8 Lint](https://github.com/emrox/aoc-2021/actions/workflows/flake8.yml/badge.svg)](https://github.com/emrox/aoc-2021/actions/workflows/flake8.yml)
-![](https://img.shields.io/badge/day%20📅-2-blue)
-![](https://img.shields.io/badge/stars%20⭐-4-yellow)
-![](https://img.shields.io/badge/days%20completed-2-red)
+![](https://img.shields.io/badge/day%20📅-5-blue)
+![](https://img.shields.io/badge/stars%20⭐-10-yellow)
+![](https://img.shields.io/badge/days%20completed-5-red)
 
 # aoc-2021
 
