@@ -1,6 +1,6 @@
 import os
 import statistics
-from math import ceil, floor
+from math import floor
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
 input_file = os.path.join(base_directory, 'input')
