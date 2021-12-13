@@ -3,7 +3,10 @@ import os
 base_directory = os.path.dirname(os.path.realpath(__file__))
 input_file = os.path.join(base_directory, 'input')
 
-raw_coordinates, fold_instructions = map(lambda line: line.split('\n'), open(input_file, 'r').read().strip().split('\n\n'))
+raw_coordinates, fold_instructions = map(
+    lambda line: line.split('\n'),
+    open(input_file, 'r').read().strip().split('\n\n')
+)
 
 coordinates = []
 sheet = []
