@@ -9,7 +9,6 @@ x_from, x_to, y_to, y_from = map(
 )
 
 positive_probes = []
-valid_velocities = []
 
 for x_vel in range((x_to * 2) + 1):
     for y_vel in range((abs(y_to) * 2) + 1):
@@ -41,7 +40,6 @@ for x_vel in range((x_to * 2) + 1):
 
             if x >= x_from and x <= x_to and y <= y_from and y >= y_to:
                 positive_probes.append(probe_positions)
-                valid_velocities.append(current_velocity)
                 break
 
 max_y = 0
@@ -50,4 +48,4 @@ for probe_nr, positive_probe in enumerate(positive_probes):
 
     max_y = probe_max_y if probe_max_y > max_y else max_y
 
-print(f'Maximum Y Pos: {max_y}, valid Velocities: {len(valid_velocities)}')
+print(f'Maximum Y Pos: {max_y}, valid Velocities: {len(positive_probes)}')
