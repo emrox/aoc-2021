@@ -1,12 +1,12 @@
 import os
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
-input_file = os.path.join(base_directory, 'input')
+input_file = os.path.join(base_directory, 'debug')
 
 algorythm, raw_image = open(input_file, 'r').read().strip().split('\n\n')
 
 base_image = raw_image.split('\n')
-base_blank_pixel = algorythm[-1]
+base_blank_pixel = '.'
 
 
 def pixel_sequence_to_new_pixel(sequence):
