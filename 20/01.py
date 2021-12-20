@@ -1,6 +1,4 @@
 import os
-from collections import Counter
-from typing import Sequence
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
 input_file = os.path.join(base_directory, 'input')
@@ -10,6 +8,7 @@ algorythm, raw_image = open(input_file, 'r').read().strip().split('\n\n')
 base_image = raw_image.split('\n')
 base_blank_pixel = algorythm[-1]
 
+
 def pixel_sequence_to_new_pixel(sequence):
     binary_calc_string = sequence.replace('.', '0').replace('#', '1')
     calc_pos = int(binary_calc_string, 2)
@@ -17,7 +16,7 @@ def pixel_sequence_to_new_pixel(sequence):
 
 
 def calc_pixel(img, x, y):
-    pixel_calc_string= ''
+    pixel_calc_string = ''
     line_count = len(img)
     line_length = len(img[0])
 
@@ -34,6 +33,7 @@ def calc_pixel(img, x, y):
     )
 
     return pixel_sequence_to_new_pixel(pixel_calc_string)
+
 
 def expand_image(img):
     blank_line = [base_blank_pixel]*(len(img[0]) + 2)
